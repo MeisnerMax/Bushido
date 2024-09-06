@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Kampfsportstudio Bushido Coburg</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        .navbar-brand {
+            color: #ffffff !important; /* Setzt die Textfarbe auf Weiß */
+        }
+
+        .navbar-brand:hover {
+            color: #f8f9fa !important; /* Optional: Ändert die Farbe bei Hover, auch auf Weiß */
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar navbar-expand-lg b-dark sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Linke Seite der Navigation -->
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Start</a>
+                <a class="nav-item nav-link" href="about.html">Über uns</a>
+            </div>
+
+            <!-- Mittlerer Teil der Navigation (Logo und Name) -->
+            <a class="navbar-brand mx-auto d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" height="40" class="mr-2">
+                Kampfsportstudio Bushido Coburg
+            </a>
+
+            <!-- Rechte Seite der Navigation -->
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="classes.html">Kurse</a>
+                <a class="nav-item nav-link" href="blog.html">Blog</a>
+                <a class="nav-item nav-link" href="contact.html">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Blog Artikel -->
+    <div class="container mt-5">
+        <h2>Blog</h2>
+
+        <!-- Aktueller Artikel -->
+        <div class="card blog-article mb-4" data-aos="fade-up">
+            <div class="card-body">
+                <h3 class="card-title">Neuigkeiten aus dem Studio</h3>
+                <p class="meta text-muted">Veröffentlicht am 10. September 2024 | Lesezeit: 5 Minuten</p>
+                <p class="card-text">Hier findest du die aktuellen Neuigkeiten und Artikel rund um unser Kampfsportstudio.</p>
+                <button onclick="likePost(this)" class="btn btn-outline-primary">Gefällt mir</button>
+                <span id="like-count" class="ml-2">0</span> Personen gefällt das
+                <div class="comment-section mt-4">
+                    <h4>Kommentare</h4>
+                    <input type="text" id="comment-name" class="form-control mb-2" placeholder="Name" required>
+                    <textarea id="comment-content" class="form-control mb-2" placeholder="Dein Kommentar..." required></textarea>
+                    <button type="submit" class="btn btn-primary" onclick="addComment()">Kommentieren</button>
+                    <div id="comment-list" class="mt-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vergangene Events -->
+        <div class="past-events mt-5" data-aos="fade-up">
+            <h3>Vergangene Events und Neuigkeiten</h3>
+            <div class="row">
+
+                <!-- Event Card -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Sommer 2019 - News - Umbau</h4>
+                            <p class="card-text">Bald können Sie im Bushido Coburg auch rund um die Uhr an hochwertigen Fitnessgeräten trainieren!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Unsere neuen Danträger</h4>
+                            <p class="card-text">Armin Weichhold, 3. Dan; Harald Saffer, 3. Dan; Andre Greßler, 1. Dan; Jochen Wäschenfelder, 1. Dan; vorne: Kevin Tumma, 2. Dan; Nikolai Pourraki, 3. Dan und Trainer Stefan Müller. Allen Prüflingen herzlichen Glückwunsch!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Unser neuer 1. Dan im Kickboxen</h4>
+                            <p class="card-text">Michael Falkenhain. Herzlichen Glückwunsch!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Neu im Fight & Fitness Frohnlach</h4>
+                            <p class="card-text">Rund um die Uhr trainieren! 24 Stunden, 7 Tage die Woche! Monatlich kündbar!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Sommerlager Autenhausen 2016</h4>
+                            <p class="card-text">2016 fand für die Vereins- und Kampfsportschulen Mitglieder das regelmäßige Sommerlager wieder in Autenhausen statt. Gute Laune und Badesachen waren mit von der Partie!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Weihnachtsfeier am 16.12.2015</h4>
+                            <p class="card-text">Die jährliche Weihnachtsfeier fand in festlicher Stimmung statt, bei der alle Mitglieder zusammen kamen, um das Jahr gemeinsam ausklingen zu lassen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Bushido Coburg Kämpfer in der HUK Arena</h4>
+                            <p class="card-text">Die Kämpfer des Bushido Coburg präsentierten ihre Kampfsportschule stolz in der HUK Arena.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title">Roundtable Kinderfest</h4>
+                            <p class="card-text">Am Sonntag, 20.09.2015, fand ihr uns wie jedes Jahr auf dem Roundtable Kinderfest in der HUK Arena.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer b-dark text-white text-center py-4">
+        <p>© 2024 Kampfsportstudio Bushido Coburg. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        function likePost(button) {
+            let likeCount = parseInt(document.getElementById('like-count').textContent);
+            likeCount++;
+            document.getElementById('like-count').textContent = likeCount;
+            button.disabled = true;
+        }
+
+        function addComment() {
+            const name = document.getElementById('comment-name').value;
+            const content = document.getElementById('comment-content').value;
+            const comment = `<p><strong>${name}:</strong> ${content}</p>`;
+            document.getElementById('comment-list').innerHTML += comment;
+            document.getElementById('comment-name').value = '';
+            document.getElementById('comment-content').value = '';
+        }
+    </script>
+</body>
+</html>

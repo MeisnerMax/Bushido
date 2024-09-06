@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurse - Kampfsportstudio Bushido Coburg</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Verlinkt die externe CSS-Datei -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar navbar-expand-lg b-dark sticky-top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Linke Seite der Navigation -->
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Start</a>
+                <a class="nav-item nav-link" href="about.html">Über uns</a>
+            </div>
+
+            <!-- Mittlerer Teil der Navigation (Logo und Name) -->
+            <a class="navbar-brand mx-auto d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" height="40" class="mr-2">
+                Kampfsportstudio Bushido Coburg
+            </a>
+
+            <!-- Rechte Seite der Navigation -->
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="classes.html">Kurse</a>
+                <a class="nav-item nav-link" href="blog.html">Blog</a>
+                <a class="nav-item nav-link" href="contact.html">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Trainingszeiten Übersicht -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Trainingszeiten</h2>
+    <div class="alert alert-info shadow-sm rounded border-left border-info" role="alert">
+        <strong>Wichtiger Hinweis:</strong> Während der Weihnachtsferien findet kein Karate- und Kickboxtraining statt. Boxen nach Traineransage. Andere Ferienzeiten werden in der WhatsApp-Gruppe bekannt gegeben. Nach der letzten Schulstunde ist Ferienbeginn und somit gelten Ferienzeiten!
+        <p>Wir wünschen euch einen erholsamen Urlaub - Euer Bushido-Coburg Team.</p>
+    </div>
+
+    <!-- Akkordeon für Trainingszeiten -->
+    <div class="accordion shadow-sm rounded mt-4" id="trainingAccordion">
+        <!-- Boxen -->
+        <div class="card mb-2 border-0">
+            <div class="card-header bg-dark text-white rounded" id="headingBoxen">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseBoxen" aria-expanded="true" aria-controls="collapseBoxen">
+                        Boxen
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseBoxen" class="collapse show" aria-labelledby="headingBoxen" data-parent="#trainingAccordion">
+                <div class="card-body">
+                    <ul>
+                        <li>Dienstag und Donnerstag, 17:30 - 19:30 Uhr (Uwe)</li>
+                        <li>Samstag 9:30 Uhr bzw. nach Traineransage</li>
+                        <li><strong>Hinweis:</strong> Aufgrund von Corona können sich die Trainingszeiten ändern. Bitte kontaktiert den Boxtrainer. Handynummer, siehe Startseite.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Karate -->
+        <div class="card mb-2 border-0">
+            <div class="card-header bg-dark text-white rounded" id="headingKarate">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseKarate" aria-expanded="false" aria-controls="collapseKarate">
+                        Karate
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseKarate" class="collapse" aria-labelledby="headingKarate" data-parent="#trainingAccordion">
+                <div class="card-body">
+                    <h5>Karate Erwachsene:</h5>
+                    <ul>
+                        <li>Montag und Mittwoch, 18:00 - 19:30 Uhr</li>
+                    </ul>
+                    <h5>Karate Kinder:</h5>
+                    <p><strong>Neueinsteiger:</strong></p>
+                    <ul>
+                        <li>Mittwoch, 17:00 Uhr</li>
+                        <li>Freitag, 17:30 Uhr</li>
+                    </ul>
+                    <p><strong>Fortgeschrittene:</strong></p>
+                    <ul>
+                        <li>Montag, 17:00 Uhr</li>
+                        <li>Freitag, 16:30 Uhr</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kickboxen -->
+        <div class="card mb-2 border-0">
+            <div class="card-header bg-dark text-white rounded" id="headingKickboxen">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseKickboxen" aria-expanded="false" aria-controls="collapseKickboxen">
+                        Kickboxen
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseKickboxen" class="collapse" aria-labelledby="headingKickboxen" data-parent="#trainingAccordion">
+                <div class="card-body">
+                    <h5>Jugend & Erwachsene:</h5>
+                    <ul>
+                        <li>Montag und Mittwoch, 19:30 - 21:00 Uhr (Stefan)</li>
+                        <li>Wochenende nach Ansage bzw. nach WhatsApp-Info</li>
+                    </ul>
+                    <h5>Kickboxen in Frohnlach:</h5>
+                    <ul>
+                        <li>Ab 14 Jahre (Anfänger & Fortgeschrittene): Dienstag, 19:00 - 20:30 Uhr</li>
+                        <li>Kinder: Donnerstag, 18:00 Uhr</li>
+                        <li>Erwachsene: Dienstag und Donnerstag, 19:00 Uhr</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MMA -->
+        <div class="card mb-2 border-0">
+            <div class="card-header bg-dark text-white rounded" id="headingMMA">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseMMA" aria-expanded="false" aria-controls="collapseMMA">
+                        Mixed Martial Arts (MMA)
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseMMA" class="collapse" aria-labelledby="headingMMA" data-parent="#trainingAccordion">
+                <div class="card-body">
+                    <ul>
+                        <li>Ab 12.01.2024: Dienstag, 19:45 - 21:15 Uhr</li>
+                        <li>Freitag, 19:00 - 21:00 Uhr</li>
+                    </ul>
+                    <h5>MMA in Frohnlach:</h5>
+                    <ul>
+                        <li>Montag, 19:00 Uhr</li>
+                        <li>Mittwoch, 19:30 Uhr</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Functional Training Fitness -->
+        <div class="card mb-2 border-0">
+            <div class="card-header bg-dark text-white rounded" id="headingFitness">
+                <h5 class="mb-0">
+                    <button class="btn btn-link text-white text-left w-100 collapsed" type="button" data-toggle="collapse" data-target="#collapseFitness" aria-expanded="false" aria-controls="collapseFitness">
+                        Functional Training Fitness (Frohnlach)
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFitness" class="collapse" aria-labelledby="headingFitness" data-parent="#trainingAccordion">
+                <div class="card-body">
+                    <ul>
+                        <li>Dienstag, ab 18:00 Uhr bei Martin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Anmeldung für Kurse -->
+<section class="signup mt-5 py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Anmeldung für Kurse</h2>
+        <p class="text-center mb-4">Melden Sie sich jetzt für einen unserer Kurse an und erleben Sie die Vorteile des Trainings bei uns!</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="submit_form.php" method="post" class="p-4 border rounded shadow-sm bg-white" data-aos="fade-up">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Kurs auswählen:</label>
+                        <select id="course" class="form-control">
+                            <option>Karate für Anfänger</option>
+                            <option>Kickboxen Fortgeschrittene</option>
+                            <option>MMA Training</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Jetzt anmelden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer mt-5 b-dark text-white py-4">
+    <p class="text-center mb-0">© 2024 Kampfsportstudio Bushido Coburg. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
